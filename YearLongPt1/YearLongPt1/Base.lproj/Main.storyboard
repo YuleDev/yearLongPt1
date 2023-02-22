@@ -198,6 +198,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="e9U-g1-8Nb"/>
+                    <connections>
+                        <outlet property="darkModeButton" destination="0YP-Bd-raO" id="u0E-0x-H20"/>
+                        <outlet property="lightModeButton" destination="cjc-rW-Xem" id="PtB-zA-iAt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U69-eA-ihP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="01u-VY-mpV" userLabel="Exit" sceneMemberID="exit"/>
