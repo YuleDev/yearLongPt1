@@ -1,6 +1,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -8,8 +9,9 @@ class ViewController: UIViewController {
     }
 
 
-    @IBAction func darkModeSwitch(_ sender: Any) {
+    @IBAction func darkModeSwitch(_ sender: UISwitch) {
         // ternary op to change bg color? true or false ?? 1 : 2
+        view.backgroundColor = sender.isOn ?  .white : .black
     }
     
 }
