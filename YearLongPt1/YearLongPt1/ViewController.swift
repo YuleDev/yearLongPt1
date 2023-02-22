@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  YearLongPt1
-//
-//  Created by kole ervine on 2/22/23.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -15,5 +8,9 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func darkModeSwitch(_ sender: Any) {
+        // ternary op to change bg color? true or false ?? 1 : 2
+    }
+    
 }
 
