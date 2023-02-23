@@ -4,17 +4,19 @@ class ViewController: UIViewController {
     
     @IBOutlet var lightModeButton: UILabel!
     @IBOutlet var darkModeButton: UILabel!
+    @IBOutlet var lightDarkSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    
     @IBAction func darkModeSwitch(_ sender: UISwitch) {
-        // ternary op to change bg color? true or false ?? 1 : 2
-        view.backgroundColor = sender.isOn ?  .white : .black
-        lightModeButton.backgroundColor = sender.isOn ? .clear : .white
-        darkModeButton.backgroundColor = sender.isOn ? .clear : .white
+        let scenes = UIApplication.shared.connectedScenes
+        if let windowScene = scenes.compactMap({ $0 as? UIWindowScene }).first,
+           let window = windowScene.windows.first {
+            window.overrideUserInterfaceStyle = sender.isOn ? .light : .dark
         }
     }
+}
