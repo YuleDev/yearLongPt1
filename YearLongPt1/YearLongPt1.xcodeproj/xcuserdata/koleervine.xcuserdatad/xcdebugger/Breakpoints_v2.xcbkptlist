@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9176ED20-D7FE-4D23-878F-3741E35DDC13"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C9C8290-512B-46E4-A0E1-B0F588BF9408"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YearLongPt1/CommentTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1996A9A3-50CA-45F9-898F-863C12F7FFCF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "YearLongPt1/SocialMediaTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "viewCommentFunction(_:sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1996A9A3-50CA-45F9-898F-863C12F7FFCF - a2888c37defd1ebd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YearLongPt1.SocialMediaTableViewController.viewCommentFunction(_: __C.NSCoder, sender: Swift.Optional&lt;Any&gt;) -&gt; Swift.Optional&lt;YearLongPt1.CommentTableViewController&gt;"
+                  moduleName = "YearLongPt1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koleervine/Documents/MTEC/LABS/yearLongPt1/YearLongPt1/YearLongPt1/SocialMediaTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "1996A9A3-50CA-45F9-898F-863C12F7FFCF - a2888c37defd1ebd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YearLongPt1.SocialMediaTableViewController.viewCommentFunction(_: __C.NSCoder, sender: Swift.Optional&lt;Any&gt;) -&gt; Swift.Optional&lt;YearLongPt1.CommentTableViewController&gt;"
+                  moduleName = "YearLongPt1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koleervine/Documents/MTEC/LABS/yearLongPt1/YearLongPt1/YearLongPt1/SocialMediaTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "412">
+               </Location>
+               <Location
+                  uuid = "1996A9A3-50CA-45F9-898F-863C12F7FFCF - a2888c37defd1ebd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YearLongPt1.SocialMediaTableViewController.viewCommentFunction(_: __C.NSCoder, sender: Swift.Optional&lt;Any&gt;) -&gt; Swift.Optional&lt;YearLongPt1.CommentTableViewController&gt;"
+                  moduleName = "YearLongPt1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koleervine/Documents/MTEC/LABS/yearLongPt1/YearLongPt1/YearLongPt1/SocialMediaTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "432">
+               </Location>
+               <Location
+                  uuid = "1996A9A3-50CA-45F9-898F-863C12F7FFCF - a2888c37defd1ebd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "YearLongPt1.SocialMediaTableViewController.viewCommentFunction(_: __C.NSCoder, sender: Swift.Optional&lt;Any&gt;) -&gt; Swift.Optional&lt;YearLongPt1.CommentTableViewController&gt;"
+                  moduleName = "YearLongPt1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/koleervine/Documents/MTEC/LABS/yearLongPt1/YearLongPt1/YearLongPt1/SocialMediaTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "684">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -278,6 +278,7 @@
                                     <outlet property="descriptionLabel" destination="9ee-Gv-ZfY" id="fjR-Dv-coM"/>
                                     <outlet property="titleLabel" destination="xxY-QE-sau" id="IXX-ZR-fvX"/>
                                     <outlet property="userLabel" destination="BhX-uz-8cZ" id="1nh-QW-Crx"/>
+                                    <segue destination="GX6-Al-D5n" kind="show" identifier="showComment" destinationCreationSelector="viewCommentFunction:sender:" id="HXI-Pi-3td"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -287,39 +288,30 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="96A-1K-Ios"/>
-                    <connections>
-                        <segue destination="GX6-Al-D5n" kind="show" identifier="showComment" id="wOo-uy-RHT"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3S-nA-gK8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6189" y="1565"/>
         </scene>
-        <!--Social Media Table View Controller-->
+        <!--Comment Table View Controller-->
         <scene sceneID="au2-Q4-YOk">
             <objects>
-                <tableViewController id="GX6-Al-D5n" customClass="SocialMediaTableViewController" customModule="YearLongPt1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="GX6-Al-D5n" customClass="CommentTableViewController" customModule="YearLongPt1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Jhf-GH-i9Z">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" rowHeight="177" id="Ily-gi-WOR" customClass="SocialMediaCell" customModule="YearLongPt1" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCell" rowHeight="177" id="Ily-gi-WOR" customClass="CommentTableViewCell" customModule="YearLongPt1" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="177"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ily-gi-WOR" id="yMx-t1-pCT">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="177"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jt-zM-6ck">
-                                            <rect key="frame" x="20" y="39" width="33" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzm-cN-cg1">
-                                            <rect key="frame" x="20" y="72" width="88" height="33"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f88-mx-57i">
+                                            <rect key="frame" x="20" y="7" width="42" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -329,9 +321,9 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f88-mx-57i">
-                                            <rect key="frame" x="20" y="7" width="42" height="24"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzm-cN-cg1">
+                                            <rect key="frame" x="20" y="72" width="88" height="33"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -339,21 +331,18 @@
                                     <constraints>
                                         <constraint firstItem="f88-mx-57i" firstAttribute="top" secondItem="yMx-t1-pCT" secondAttribute="top" constant="7" id="55T-7v-ytC"/>
                                         <constraint firstItem="uNw-Mr-5SU" firstAttribute="leading" secondItem="yMx-t1-pCT" secondAttribute="leading" constant="61" id="5Ee-rp-Anz"/>
-                                        <constraint firstItem="Dzm-cN-cg1" firstAttribute="leading" secondItem="8jt-zM-6ck" secondAttribute="leading" id="EcF-wO-gDJ"/>
+                                        <constraint firstItem="Dzm-cN-cg1" firstAttribute="centerY" secondItem="yMx-t1-pCT" secondAttribute="centerY" id="GBb-hE-icS"/>
+                                        <constraint firstItem="Dzm-cN-cg1" firstAttribute="leading" secondItem="yMx-t1-pCT" secondAttribute="leadingMargin" id="HOM-7Z-4sm"/>
                                         <constraint firstItem="Dzm-cN-cg1" firstAttribute="leading" secondItem="f88-mx-57i" secondAttribute="leading" id="K9F-VD-pi6"/>
                                         <constraint firstItem="uNw-Mr-5SU" firstAttribute="top" secondItem="yMx-t1-pCT" secondAttribute="topMargin" constant="35" id="KRB-mZ-SrI"/>
-                                        <constraint firstItem="Dzm-cN-cg1" firstAttribute="top" secondItem="8jt-zM-6ck" secondAttribute="bottom" constant="12" id="MMr-wL-0bd"/>
-                                        <constraint firstItem="8jt-zM-6ck" firstAttribute="top" secondItem="f88-mx-57i" secondAttribute="bottom" constant="8" symbolic="YES" id="Mj4-xd-ygS"/>
-                                        <constraint firstItem="uNw-Mr-5SU" firstAttribute="leading" secondItem="8jt-zM-6ck" secondAttribute="trailing" constant="8" symbolic="YES" id="lZJ-4e-0Af"/>
                                         <constraint firstItem="Dzm-cN-cg1" firstAttribute="top" secondItem="uNw-Mr-5SU" secondAttribute="bottom" constant="14" id="pCN-AZ-sN2"/>
                                         <constraint firstAttribute="bottom" secondItem="Dzm-cN-cg1" secondAttribute="bottom" constant="72" id="ygc-Bb-mCk"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="dateLabel" destination="uNw-Mr-5SU" id="sA4-Wd-lpv"/>
-                                    <outlet property="descriptionLabel" destination="Dzm-cN-cg1" id="qa0-Q9-UkK"/>
-                                    <outlet property="titleLabel" destination="8jt-zM-6ck" id="UpQ-uK-0XJ"/>
-                                    <outlet property="userLabel" destination="f88-mx-57i" id="VPW-tX-AdF"/>
+                                    <outlet property="dateLabel" destination="uNw-Mr-5SU" id="wTM-rm-P3e"/>
+                                    <outlet property="descriptionLabel" destination="Dzm-cN-cg1" id="7Kb-WG-kvy"/>
+                                    <outlet property="userLabel" destination="f88-mx-57i" id="TbT-OX-omb"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

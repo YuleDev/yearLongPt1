@@ -13,10 +13,6 @@ class SocialMediaCell: UITableViewCell {
         dateLabel.text = post.datePosted
         descriptionLabel.text = post.description
     }
-    
-//    func updateCellView(comment: Comment) {
-//
-//    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
